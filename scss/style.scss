@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+
+$background-main : hsl(0, 100%, 74%) ;
+$background-form-top: hsl(248, 32%, 49%);
+
+.error-text, .error-icon {
+    display: none;
+}
+
+body {
+    background-color: $background-main;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    margin-top: 30px;
+    .heading {
+        padding: 60px 0px;
+        color: white;
+        text-align: center;
+        h1 {
+            font-weight: 700;
+        }
+    }
+    .form {
+        .card-top-form {
+            color: white;
+            background-color: $background-form-top;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+            p {
+                padding: 10px;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .card {
+            border-radius: 10px;
+            .card-body {
+                padding: 30px;
+                position: relative;
+                .btn {
+                    border-radius: 8px;
+                    background-color: hsl(154, 59%, 51%);
+                    color: white;
+                    width: 100%;
+                    box-shadow: 0px 4px hsl(154, 56%, 44%);
+                }
+                .btn:hover {
+                    cursor: pointer;
+                }
+                .btn:active {
+                    box-shadow: 0px 4px hsl(154, 59%, 51%);
+                    transform: translateY(4px);
+                }
+                .terms-services {
+                    font-size: 11px;
+                    color: hsl(246, 25%, 77%);
+                    span {
+                        color: hsl(0, 100%, 74%) ;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .form-input {
+            .form-input-value {
+                margin-bottom: 20px;
+                position: relative;
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    position: relative;
+                    border-radius: 8px;
+                    border: 1px solid hsl(246, 25%, 77%);
+                }
+                input:focus {
+                    outline: none;
+                    border: 2px solid hsl(249, 10%, 26%) ;
+                }
+            }
+        }
+    }
+}
+
+
+
+//responsive
+@media (min-width: 992px) {
+    .main {
+        margin-top: 100px;
+        .heading {
+            padding: 120px 0px;
+            text-align: left;
+        }
+    }
+}
+
+.error-text {
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    font-size: .8rem;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+.error-icon {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    top: 15%;
+}
+
+.form-input-value.error .error-text, 
+.form-input-value.error .error-icon {
+    display: block;
+}
+.form-input-value.error input {
+    border: 2px solid hsl(0, 100%, 74%) ;
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+.error-text, .error-icon {
+  display: none;
+}
+
+body {
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.main .heading {
+  padding: 60px 0px;
+  color: white;
+  text-align: center;
+}
+
+.main .heading h1 {
+  font-weight: 700;
+}
+
+.main .form .card-top-form {
+  color: white;
+  background-color: #6055a5;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.404);
+          box-shadow: 0 7px rgba(62, 60, 73, 0.404);
+}
+
+.main .form .card-top-form p {
+  padding: 10px;
+}
+
+.main .form .card-top-form p span {
+  font-weight: 600;
+}
+
+.main .form .card {
+  border-radius: 10px;
+}
+
+.main .form .card .card-body {
+  padding: 30px;
+  position: relative;
+}
+
+.main .form .card .card-body .btn {
+  border-radius: 8px;
+  background-color: #38cc8c;
+  color: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px #31af79;
+          box-shadow: 0px 4px #31af79;
+}
+
+.main .form .card .card-body .btn:hover {
+  cursor: pointer;
+}
+
+.main .form .card .card-body .btn:active {
+  -webkit-box-shadow: 0px 4px #38cc8c;
+          box-shadow: 0px 4px #38cc8c;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.main .form .card .card-body .terms-services {
+  font-size: 11px;
+  color: #b9b6d3;
+}
+
+.main .form .card .card-body .terms-services span {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+.main .form .form-input .form-input-value {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main .form .form-input .form-input-value input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #b9b6d3;
+}
+
+.main .form .form-input .form-input-value input:focus {
+  outline: none;
+  border: 2px solid #3e3c49;
+}
+
+@media (min-width: 992px) {
+  .main {
+    margin-top: 100px;
+  }
+  .main .heading {
+    padding: 120px 0px;
+    text-align: left;
+  }
+}
+
+.error-text {
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  font-size: .8rem;
+  font-style: italic;
+  color: #ff7a7a;
+  font-weight: 500;
+}
+
+.error-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  top: 15%;
+}
+
+.form-input-value.error .error-text,
+.form-input-value.error .error-icon {
+  display: block;
+}
+
+.form-input-value.error input {
+  border: 2px solid #ff7a7a;
+}
+/*# sourceMappingURL=style.css.map */
